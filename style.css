@@ -203,6 +203,10 @@ p {
   color: rgb(200, 200, 200);
 }
 
+h3 {
+  color: #ffffff;
+}
+
 /* TRANSITION */
 
 a,
@@ -547,6 +551,17 @@ article {
   width: 10rem;
   justify-content: space-around;
   gap: 0.5rem;
+}
+
+article h3 {
+  color: #ffffff;
+  font-weight: 600;
+  margin: 0;
+}
+
+article p {
+  color: rgba(200, 200, 200, 0.9);
+  margin: 0;
 }
 
 article .icon {
