@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
 
@@ -21,20 +22,37 @@ export function Hero() {
           internal tools roles (onsite / hybrid / remote with travel)
         </div>
 
-        <h1
-          id="hero-heading"
-          className="mt-8 max-w-3xl animate-fade-up text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl"
+        <div
+          className="mt-8 grid animate-fade-up items-start gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(240px,280px)] lg:gap-12"
           style={{ animationDelay: "0.05s" }}
         >
-          {site.headline}
-        </h1>
+          <div>
+            <h1
+              id="hero-heading"
+              className="max-w-3xl text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-[3.35rem] lg:leading-[1.1]"
+            >
+              {site.headline}
+            </h1>
 
-        <p
-          className="mt-6 max-w-2xl animate-fade-up text-base leading-relaxed text-ink-muted sm:text-lg"
-          style={{ animationDelay: "0.12s" }}
-        >
-          {site.headlineSub}
-        </p>
+            <p className="mt-6 max-w-2xl text-base leading-relaxed text-ink-muted sm:text-lg">{site.headlineSub}</p>
+          </div>
+
+          <figure className="relative mx-auto w-full max-w-[280px] shrink-0 justify-self-center lg:mx-0 lg:justify-self-end">
+            <div className="relative aspect-square overflow-hidden rounded-2xl border border-white/[0.12] bg-canvas-subtle shadow-soft ring-1 ring-white/[0.06]">
+              <Image
+                src="/headshot.png"
+                alt={`${site.name} — professional headshot`}
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 1024px) 280px, 280px"
+                priority
+              />
+            </div>
+            <figcaption className="mt-3 text-center font-mono text-[11px] text-ink-faint lg:text-right">
+              {site.name}
+            </figcaption>
+          </figure>
+        </div>
 
         <dl
           className="mt-10 grid animate-fade-up gap-6 sm:grid-cols-3"
