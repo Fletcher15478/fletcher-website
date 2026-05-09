@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply min-h-dvh bg-canvas text-ink antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  @apply bg-accent/30 text-white;
+}
+
+.focus-ring {
+  @apply outline-none ring-offset-2 ring-offset-canvas focus-visible:ring-2 focus-visible:ring-accent;
+}
+
+/* Subtle diagonal sheen for SaaS-style backgrounds */
+.bg-app {
+  background-image: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.16), transparent 45%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 32%);
+}
+
+.grid-overlay {
+  background-size: 52px 52px;
+  mask-image: radial-gradient(ellipse at 50% 0%, black 0%, transparent 70%);
+}

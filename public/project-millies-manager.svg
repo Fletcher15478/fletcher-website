@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" fill="none" role="img" aria-labelledby="t">
+  <title id="t">Operations platform schematic  stores, APIs, and admin</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#06080d"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#6366f1" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="32" fill="url(#bg)"/>
+  <rect x="48" y="48" width="1104" height="579" rx="28" stroke="url(#edge)" stroke-width="1.5" opacity="0.9"/>
+  <text x="96" y="118" fill="#e5e7eb" font-family="ui-sans-serif, system-ui" font-size="28" font-weight="600">Multi-location operations graph</text>
+  <text x="96" y="156" fill="#9ca3af" font-family="ui-sans-serif, system-ui" font-size="16">Square · WordPress · Supabase · Google workflows  synchronized state</text>
+  <rect x="96" y="210" width="240" height="110" rx="14" stroke="rgba(255,255,255,0.12)" fill="rgba(255,255,255,0.03)"/>
+  <text x="126" y="252" fill="#e5e7eb" font-size="16" font-family="ui-monospace, monospace">STORES</text>
+  <text x="126" y="282" fill="#9ca3af" font-size="13" font-family="ui-sans-serif, system-ui">Hours · flavors · training</text>
+  <rect x="396" y="210" width="260" height="110" rx="14" stroke="rgba(99,102,241,0.45)" fill="rgba(99,102,241,0.08)"/>
+  <text x="426" y="252" fill="#e5e7eb" font-size="16" font-family="ui-monospace, monospace">ORCHESTRATION</text>
+  <text x="426" y="282" fill="#9ca3af" font-size="13" font-family="ui-sans-serif, system-ui">RBAC · audit · sync jobs</text>
+  <rect x="716" y="210" width="380" height="110" rx="14" stroke="rgba(255,255,255,0.12)" fill="rgba(255,255,255,0.03)"/>
+  <text x="746" y="252" fill="#e5e7eb" font-size="16" font-family="ui-monospace, monospace">SYSTEMS OF RECORD</text>
+  <text x="746" y="282" fill="#9ca3af" font-size="13" font-family="ui-sans-serif, system-ui">Square · WP REST · Supabase</text>
+  <path d="M336 265h48" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+  <path d="M656 265h48" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+  <rect x="96" y="380" width="1000" height="200" rx="18" stroke="rgba(255,255,255,0.10)" fill="rgba(255,255,255,0.02)"/>
+  <text x="126" y="432" fill="#e5e7eb" font-size="15" font-family="ui-sans-serif, system-ui" font-weight="600">Deployment &amp; surface area</text>
+  <text x="126" y="468" fill="#9ca3af" font-size="14" font-family="ui-sans-serif, system-ui">Render · DNS/TLS · auth hardening · operator dashboards</text>
+  <text x="126" y="510" fill="#6b7280" font-size="13" font-family="ui-sans-serif, system-ui">Replace this graphic with a product screenshot when sharing externally.</text>
+</svg>
