@@ -2,6 +2,9 @@
   "name": "fletcher-hartsock-portfolio",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "dev": "NEXT_DISABLE_DEVTOOLS=1 next dev",
     "build": "next build",
