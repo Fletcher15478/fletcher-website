@@ -8,8 +8,8 @@ export function SiteFooter() {
         <div>
           <p className="font-mono text-sm text-white">{site.name}</p>
           <p className="mt-1 max-w-md text-sm text-ink-muted">
-            Production systems for franchises, operators, and teams that treat software as infrastructure—not
-            an art project.
+            Field‑ready technical operator for customer deployments, operator training, and production systems—not an art
+            project.
           </p>
         </div>
         <div className="flex flex-wrap gap-4 text-sm text-ink-muted">
@@ -25,8 +25,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-white/5 py-6 text-center text-[12px] text-ink-faint">
-        © {new Date().getFullYear()} {site.name}. Charlotte, NC · solutions & integration engineering for
-        operational software.
+        © {new Date().getFullYear()} {site.name}. Charlotte, NC · field & implementation engineering.
       </div>
     </footer>
   );

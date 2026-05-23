@@ -12,28 +12,29 @@ export type Project = {
 
 export const pillars = [
   {
-    title: "Systems architecture",
-    body: "End‑to‑end design for operational software: boundaries, data ownership, failure modes, and how teams actually run the system day to day.",
+    title: "On‑site & remote technical support",
+    body: "Hands‑on troubleshooting at customer and operator locations—diagnosing production issues, documenting findings, and driving remediation until systems match what the field actually needs.",
   },
   {
-    title: "Integration & API orchestration",
-    body: "Square, WordPress REST surfaces, Supabase, Google Business workflows—connected with clear contracts, retries, and observable sync paths.",
+    title: "Installation & project leadership",
+    body: "Coordinating multi‑location rollouts end to end: sequencing work, aligning stakeholders, managing cutovers, and owning delivery from planning through sign‑off.",
   },
   {
-    title: "Operational automation",
-    body: "Fewer manual handoffs: batch codes, shipments, catalog semantics, training content, and announcements flowing through controlled pipelines.",
+    title: "Training & technical documentation",
+    body: "Translating complex systems into operator‑ready training, runbooks, and support materials—so teams can run, maintain, and escalate without engineering in the loop.",
   },
   {
-    title: "Platform reliability",
-    body: "Production discipline on Render—DNS, TLS, auth hardening, structured logging, RBAC, and audit trails that stakeholders can reason about.",
+    title: "Integration & systems troubleshooting",
+    body: "Connecting payments, CMS, data stores, and internal tooling with clear contracts and observable paths—then debugging vendor APIs, sync failures, and auth issues under production pressure.",
   },
 ] as const;
 
 export const engagements = [
-  "Solutions engineering engagements with business owners and operators",
-  "Integration engineering for payments, CMS, and internal data stores",
-  "Internal tools for franchise and field operations",
-  "Platform operations: deploy, monitor, and debug production paths",
+  "Field engineering and on‑site technical assistance for customer deployments",
+  "Project leadership for multi‑location installations and system rollouts",
+  "Operator training, documentation, and technical support workflows",
+  "Implementation, integration, and platform engineering for production systems",
+  "Hardware troubleshooting, installation testing, and systems diagnostics",
 ] as const;
 
 export const projects: Project[] = [
@@ -99,24 +100,25 @@ export const projects: Project[] = [
     },
   },
   {
-    name: "Events discovery — marketing site modernization",
-    role: "Frontend & integration engineer",
+    name: "EcoCAR EV Challenge — WVU",
+    role: "Hardware & vehicle systems engineer",
+    featured: true,
     summary:
-      "Rebuilt Millie’s events experience inside the existing TopHat stack using JavaScript and Tailwind for a sharper, SEO‑conscious layout. Integrated with the live database and admin tooling so marketing can publish without engineering, then shipped on Render with coordinated DNS for a no‑downtime cutover.",
+      "Cross‑functional engineering participant on West Virginia University’s EcoCAR EV Challenge team—working with sensors, embedded systems, vehicle technology workflows, and hands‑on hardware assembly. Soldered and wired electronic components, ran system diagnostics, and supported collaborative testing across mechanical, electrical, and software workstreams.",
     impact: [
-      "Improved crawlability and content hierarchy for event discovery",
-      "Editorial independence for non‑technical operators",
+      "Hands‑on soldering, assembly, and troubleshooting of electronic hardware and wiring connections",
+      "Systems testing and diagnostic work within sensor and vehicle integration environments",
+      "Collaborative engineering across hardware, embedded, and vehicle systems disciplines—not solo bench work in isolation",
     ],
-    stack: ["TopHat", "JavaScript", "Tailwind CSS", "Render", "DNS"],
-    links: [
-      { label: "Repository", href: "https://github.com/Fletcher15478/millies-calendar" },
-      { label: "Live events", href: "https://millies-homemade.com/events" },
+    stack: [
+      "Sensor systems",
+      "Embedded systems",
+      "Hardware diagnostics",
+      "Soldering & wiring",
+      "PLC fundamentals",
+      "System installation & testing",
     ],
-    image: {
-      src: "/millies-events.png",
-      fallbackSrc: "/card-events.svg",
-      alt: "Millie's events page showing categories like parties, fundraisers, catering, and calendar",
-    },
+    links: []
   },
   {
     name: "Sports forecasting models",
@@ -142,44 +144,47 @@ export const projects: Project[] = [
 
 export const skillGroups = [
   {
-    title: "Architecture & reliability",
+    title: "Field & customer operations",
     items: [
-      "Service boundaries",
-      "Data ownership diagrams",
-      "Failure‑mode conversations with operators",
-      "Structured logging",
-      "RBAC",
-      "Audit trails",
+      "On‑site troubleshooting & remediation",
+      "Multi‑location rollout coordination",
+      "Customer & operator technical support",
+      "Travel‑ready (up to ~75%) · Charlotte, NC base",
+      "Valid driver’s license & reliable transport",
     ],
   },
   {
-    title: "Integration surface",
+    title: "Hardware & industrial systems",
     items: [
-      "Square",
-      "WordPress REST",
-      "Google Business workflows",
-      "Supabase / Postgres‑backed primitives",
-      "Webhook & polling patterns",
+      "Sensor systems & embedded concepts",
+      "Hardware installation & testing",
+      "Soldering, wiring & system diagnostics",
+      "PLC fundamentals & electrical basics",
+      "Peripheral & equipment troubleshooting",
     ],
   },
   {
-    title: "Frontend stack",
-    items: ["React / Next.js", "TypeScript", "Tailwind CSS", "TopHat deployments"],
+    title: "Training & documentation",
+    items: [
+      "Operator training content",
+      "Technical runbooks & SOPs",
+      "Stakeholder‑ready status reporting",
+      "Quick study on employer‑provided equipment training",
+    ],
   },
   {
-    title: "Infrastructure & ops",
+    title: "Integration & systems",
     items: [
-      "Render",
-      "DNS",
-      "TLS",
-      "Auth debugging",
-      "Environment strategy for production tenants",
+      "Square · WordPress REST · Supabase",
+      "React / Next.js / TypeScript / Python",
+      "Production debugging under pressure",
+      "DNS / TLS / deployment coordination",
     ],
   },
 ];
 
 export const recruiterNotes = [
-  "Comfortable translating dense operational narratives into phased technical roadmaps executives can approve.",
-  "Experienced aligning engineering delivery with billing, catalogs, franchises, or multi‑tenant constraints.",
-  "Works where product, infra, API vendors, and on‑site operations intersect—not only greenfield prototypes.",
+  "Comfortable as the primary technical contact at customer and operator sites—not only behind a desk.",
+  "Hardware background from EcoCAR plus operational peripheral support; quick study on specialized field equipment with structured training.",
+  "Open to field engineering with travel, implementation engineering, integration work, and platform operations—not locked to one lane.",
 ];

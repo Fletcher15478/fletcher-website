@@ -18,8 +18,8 @@ export function Hero() {
       <div className="relative mx-auto max-w-6xl px-4 pb-20 pt-14 sm:px-6 sm:pb-24 sm:pt-20 lg:px-8 lg:pb-28 lg:pt-24">
         <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 font-mono text-[11px] text-ink-muted shadow-glow sm:text-xs">
           <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_12px_rgba(52,211,153,0.7)]" />
-          {site.location.city}, {site.location.region} · targeting solutions, integration, platform operations &
-          internal tools roles (onsite / hybrid / remote with travel)
+          {site.location.city}, {site.location.region} · field engineering · implementation & integration ·
+          travel‑ready
         </div>
 
         <div
@@ -59,21 +59,24 @@ export function Hero() {
           style={{ animationDelay: "0.18s" }}
         >
           <div className="rounded-2xl border border-white/[0.08] bg-canvas-elevated/70 p-4 shadow-soft backdrop-blur">
-            <dt className="font-mono text-[11px] uppercase tracking-[0.16em] text-ink-faint">Primary surface</dt>
+            <dt className="font-mono text-[11px] uppercase tracking-[0.16em] text-ink-faint">Field posture</dt>
             <dd className="mt-2 text-sm text-ink">
-              Multi‑tenant franchises, storefronts, and cross‑surface operational data—not toy CRUD demos.
+              On‑site support, installation leadership, and operator training across multi‑location deployments—not
+              desk‑only ticket routing.
             </dd>
           </div>
           <div className="rounded-2xl border border-white/[0.08] bg-canvas-elevated/70 p-4 shadow-soft backdrop-blur">
-            <dt className="font-mono text-[11px] uppercase tracking-[0.16em] text-ink-faint">Integration spine</dt>
+            <dt className="font-mono text-[11px] uppercase tracking-[0.16em] text-ink-faint">Hardware baseline</dt>
             <dd className="mt-2 text-sm text-ink">
-              Payments, catalogs, CMS, Google workflows, Postgres/Supabase, and guarded internal automation.
+              EcoCAR vehicle systems work—sensors, soldering, wiring, diagnostics—plus operational peripheral support in
+              production environments.
             </dd>
           </div>
           <div className="rounded-2xl border border-white/[0.08] bg-canvas-elevated/70 p-4 shadow-soft backdrop-blur">
-            <dt className="font-mono text-[11px] uppercase tracking-[0.16em] text-ink-faint">Operational proof</dt>
+            <dt className="font-mono text-[11px] uppercase tracking-[0.16em] text-ink-faint">Open lanes</dt>
             <dd className="mt-2 text-sm text-ink">
-              Delivered RBAC + audit trails, Render deployments, TLS/DNS remediation, stakeholder‑ready dashboards.
+              Field engineering with travel, implementation and integration engineering, and platform operations—quick
+              study on specialized equipment when training is provided.
             </dd>
           </div>
         </dl>

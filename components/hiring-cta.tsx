@@ -11,16 +11,16 @@ export function HiringCta() {
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.2em] text-ink-faint">Recruiter &amp; hiring manager lane</p>
               <h2 id="contact-heading" className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                Charlotte‑anchored engineer for solutions, integration, and platform operations work
+                Charlotte‑anchored engineer for field engineering and implementation work
               </h2>
               <p className="mt-4 text-base text-ink-muted sm:text-lg">
-                Open to full‑time, contract‑to‑hire, and project‑based engagements with teams that need someone who can
-                sit in architecture reviews, debug vendor APIs, and still ship typed React surfaces when the business
-                requires it.
+                Open to field engineering with travel, implementation and integration engineering, and platform
+                operations. Hardware background from EcoCAR; comfortable with employer‑provided training on specialized
+                field equipment and procedures.
               </p>
               <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <Link
-                  href={`mailto:${site.email}?subject=Solutions%20%2F%20Integration%20role%20%E2%80%94%20intro`}
+                  href={`mailto:${site.email}?subject=Field%20%2F%20Implementation%20role%20%E2%80%94%20intro`}
                   className="focus-ring inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-canvas transition hover:bg-white/90"
                 >
                   Email to schedule intros
@@ -32,7 +32,7 @@ export function HiringCta() {
                   LinkedIn messages welcome
                 </Link>
                 <Link
-                  href="/Fletcher-Resume.pdf"
+                  href={site.resume}
                   target="_blank"
                   rel="noreferrer"
                   className="focus-ring inline-flex items-center justify-center rounded-full border border-white/15 bg-white/[0.03] px-6 py-3 text-sm font-medium text-ink transition hover:border-white/25 hover:bg-white/[0.06]"
@@ -59,13 +59,14 @@ export function HiringCta() {
                 <div className="flex items-start justify-between gap-6 border-b border-white/10 pb-4">
                   <dt className="text-ink-faint">Search targets</dt>
                   <dd className="text-right font-mono text-xs text-white sm:text-[13px]">
-                    Solutions engineer · Integration engineer · Technical consultant · Platform operations · Internal tools
+                    Field engineer · Implementation engineer · Integration engineer · Technical operations · Platform
+                    engineering
                   </dd>
                 </div>
                 <div className="flex items-start justify-between gap-6 border-b border-white/10 pb-4">
                   <dt className="text-ink-faint">Metro focus</dt>
                   <dd className="text-right font-mono text-xs text-white sm:text-[13px]">
-                    Charlotte, NC + remote engagements with disciplined travel cadence
+                    Charlotte, NC · travel‑ready (up to ~75% for field roles)
                   </dd>
                 </div>
                 <div className="flex items-start justify-between gap-6 border-b border-white/10 pb-4">

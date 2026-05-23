@@ -7,12 +7,12 @@ export function SkillsMatrix() {
         <div className="max-w-3xl">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-ink-faint">Technical coverage</p>
           <h2 id="stack-heading" className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Stack matches the roles, not the bootcamp syllabus
+            Skills aligned to field engineering and implementation roles
           </h2>
           <p className="mt-4 text-base text-ink-muted sm:text-lg">
-            Day‑to‑day delivery leans on TypeScript, React, and Next.js for customer and internal surfaces, with the
-            heavy lifting happening in integrations, data contracts, permissions, and deployment discipline—exactly where
-            solutions and platform salaries justify themselves.
+            Coverage spans on‑site customer support, installation project leadership, operator training, and the
+            integration depth implementation engineering demands—exactly where field and technical operations salaries
+            justify themselves.
           </p>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">

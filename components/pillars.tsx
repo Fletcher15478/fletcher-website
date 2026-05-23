@@ -7,11 +7,11 @@ export function Pillars() {
         <div className="max-w-2xl">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-ink-faint">Systems posture</p>
           <h2 id="systems-heading" className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            How work is framed before a line of UI ships
+            How field and implementation work gets framed before deployment
           </h2>
           <p className="mt-4 text-base text-ink-muted sm:text-lg">
-            The throughline is simple: trace data from the operator’s reality to every external system that depends on it,
-            then make failure, access, and history legible—the same expectations you would hold for enterprise SaaS.
+            The throughline mirrors what field engineering demands: understand the customer environment, lead the
+            installation, train the operators, document what broke, and leave systems maintainable long after handoff.
           </p>
         </div>
         <div className="mt-12 grid gap-5 md:grid-cols-2">

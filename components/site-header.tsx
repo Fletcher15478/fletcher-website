@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { site } from "@/lib/site";
 
 const nav = [
   { href: "#work", label: "Work" },
@@ -17,7 +18,7 @@ export function SiteHeader() {
         >
           <span className="text-white/90">Fletcher Hartsock</span>
           <span className="ml-2 rounded bg-white/5 px-2 py-0.5 text-[11px] font-normal text-ink-muted ring-1 ring-white/10 transition group-hover:bg-white/10">
-            Solutions / Integration Engineer
+            Field / Implementation Engineer
           </span>
         </Link>
         <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
@@ -33,7 +34,7 @@ export function SiteHeader() {
         </nav>
         <div className="flex items-center gap-2">
           <Link
-            href="/Fletcher-Resume.pdf"
+            href={site.resume}
             className="focus-ring hidden rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-sm font-medium text-ink transition hover:border-white/20 hover:bg-white/[0.06] sm:inline-flex"
             target="_blank"
             rel="noreferrer"
@@ -57,7 +58,7 @@ export function SiteHeader() {
       <div className="border-t border-white/5 bg-canvas/95 px-4 py-2 md:hidden">
         <div className="mx-auto flex max-w-6xl flex-wrap gap-2 sm:px-6 lg:px-8">
           <Link
-            href="/Fletcher-Resume.pdf"
+            href={site.resume}
             className="focus-ring rounded-full border border-white/10 px-3 py-1.5 text-[13px] text-ink-muted"
             target="_blank"
             rel="noreferrer"

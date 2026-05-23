@@ -46,17 +46,19 @@ function ProjectCard({ project }: { project: Project }) {
             </span>
           ))}
         </div>
-        <div className="mt-6 flex flex-wrap gap-3 border-t border-white/5 pt-5">
-          {project.links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="focus-ring rounded-full bg-white px-4 py-2 text-sm font-semibold text-canvas transition hover:bg-white/90"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
+        {project.links.length > 0 ? (
+          <div className="mt-6 flex flex-wrap gap-3 border-t border-white/5 pt-5">
+            {project.links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="focus-ring rounded-full bg-white px-4 py-2 text-sm font-semibold text-canvas transition hover:bg-white/90"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        ) : null}
       </div>
     </article>
   );
@@ -69,11 +71,11 @@ export function ProjectGrid({ projects }: { projects: Project[] }) {
         <div className="max-w-3xl">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-ink-faint">Delivery record</p>
           <h2 id="work-heading" className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Selected systems with real operating constraints
+            Delivery record across field operations and production systems
           </h2>
           <p className="mt-4 text-base text-ink-muted sm:text-lg">
-            Framed for hiring managers evaluating solutions engineers and integration leads: each project bundles
-            architecture decisions, vendor APIs, operational UX, and production operations—not hypothetical weekend builds.
+            Framed for field engineering and implementation roles: software delivery, hardware systems work, on‑site
+            operational reality, and production integration—not hypothetical weekend builds.
           </p>
         </div>
         <div className="mt-12 grid gap-8 lg:grid-cols-2">

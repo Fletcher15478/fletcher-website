@@ -9,19 +9,18 @@ export function About() {
           <div>
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-ink-faint">About</p>
             <h2 id="about-heading" className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-              Operator‑grade software for teams that cannot afford mystery boxes
+              Field‑ready technical operator for customer sites and production systems
             </h2>
             <p className="mt-5 text-base leading-relaxed text-ink-muted sm:text-lg">
-              {site.name} works at the intersection of business operations and production systems—translating how
-              franchises, retail, and field teams actually run into architecture, integrations, and internal tools that
-              stay maintainable after launch. Engagement style is direct: clarify constraints, sequence risk, instrument
-              the path, then hand teams something they can audit and extend without heroics.
+              {site.name} works where technical support, installation leadership, and systems integration meet—leading
+              multi‑location rollouts, training operators, troubleshooting field and hardware issues, and building the
+              infrastructure that keeps customer‑facing systems reliable after launch.
             </p>
             <p className="mt-4 text-base leading-relaxed text-ink-muted sm:text-lg">
-              Based in {site.location.city}, {site.location.region}, with experience shipping on{" "}
-              <span className="text-ink">Render</span>, hardening <span className="text-ink">DNS, TLS, and auth</span>,
-              and keeping cross‑platform synchronization honest when catalog data, hours, or training content has to match
-              reality on the ground.
+              Based in {site.location.city}, {site.location.region}, travel‑ready for field engineering and technical
+              operations roles. Also open to implementation, integration, and platform engineering engagements—comfortable
+              picking up specialized equipment and procedures through structured employer training when the role requires
+              it.
             </p>
           </div>
           <div className="rounded-3xl border border-white/[0.08] bg-canvas-elevated/80 p-6 shadow-soft backdrop-blur">
@@ -35,8 +34,8 @@ export function About() {
               ))}
             </ul>
             <p className="mt-6 border-t border-white/5 pt-6 text-sm text-ink-muted">
-              Ideal partners: SaaS vendors modernizing operational surfaces, consulting firms embedding integration
-              engineers, platform teams shipping internal tools, and growth‑stage brands consolidating systems of record.
+              Good fit for field service teams, technical operations groups, SaaS vendors with customer deployments, and
+              platform teams that need someone comfortable on‑site—not only in architecture reviews.
             </p>
           </div>
         </div>

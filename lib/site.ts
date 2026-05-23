@@ -1,11 +1,12 @@
 export const site = {
   name: "Fletcher Hartsock",
   title:
-    "Solutions & Integration Engineer · Charlotte, NC · Operations Platforms & API Systems",
+    "Field & Implementation Engineer · Charlotte, NC · Technical Operations & Customer Systems",
   headline:
-    "Solutions & integration engineer shaping production operations software",
+    "Technical operator for field deployments, customer support, and production systems",
   headlineSub:
-    "Architecting multi‑location platforms, API orchestration layers, and internal tools that reduce overhead, improve reliability, and synchronize real business workflows—not demo apps.",
+    "Charlotte‑based engineer with hardware and integration background—leads on‑site rollouts, trains operators, troubleshoots field issues, and builds production infrastructure. Open to field engineering with travel, implementation engineering, and integration roles.",
+  resume: "/Fletcher_Hartsock_RSM.pdf",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   email: "fletchhartsock93@gmail.com",
   linkedin: "https://www.linkedin.com/in/fletcher-hartsock-4b1a80239",
