@@ -181,7 +181,7 @@ export const education = {
   school: "West Virginia University",
   degree: "Bachelor of Science, Computer Science",
   period: "2021 — 2025",
-  gpa: "3.20",
+  gpa: "3.5",
   note: "EcoCAR EV Challenge participant",
 } as const;
 
@@ -317,9 +317,9 @@ export const caseStudies: CaseStudy[] = [
       { label: "Repository", href: "https://github.com/Fletcher15478/Ecomm" },
     ],
     image: {
-      src: "/millies-ecomm-store.png",
-      fallbackSrc: "/card-ecomm.svg",
-      alt: "E-commerce and ordering storefront",
+      src: "/millies-events.png",
+      fallbackSrc: "/card-events.svg",
+      alt: "Catering and events ordering experience",
     },
   },
   {
@@ -355,6 +355,11 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
     links: [],
+    image: {
+      src: "/millies-ecomm-admin.png",
+      fallbackSrc: "/card-ecomm.svg",
+      alt: "Business operations admin and automation workflows",
+    },
   },
   {
     id: "ecocar",
@@ -396,6 +401,10 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
     links: [],
+    image: {
+      src: "/card-ecocar.svg",
+      alt: "EcoCAR vehicle telemetry and hardware validation systems",
+    },
   },
   {
     id: "square-ecommerce",
@@ -456,7 +465,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     image: {
       src: "/millies-ecomm-store.png",
-      fallbackSrc: "/card-ecomm.svg",
+      fallbackSrc: "/card-ml.svg",
       alt: "Square-integrated e-commerce platform",
     },
   },
