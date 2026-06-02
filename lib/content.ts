@@ -401,10 +401,6 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
     links: [],
-    image: {
-      src: "/card-ecocar.svg",
-      alt: "EcoCAR vehicle telemetry and hardware validation systems",
-    },
   },
   {
     id: "square-ecommerce",
