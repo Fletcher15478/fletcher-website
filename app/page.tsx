@@ -1,12 +1,16 @@
 import { About } from "@/components/about";
+import { ArchitectureThinking } from "@/components/architecture-thinking";
+import { CaseStudies } from "@/components/case-studies";
+import { Contact } from "@/components/contact";
+import { EngineeringExperience } from "@/components/engineering-experience";
 import { Hero } from "@/components/hero";
-import { HiringCta } from "@/components/hiring-cta";
-import { Pillars } from "@/components/pillars";
-import { ProjectGrid } from "@/components/project-grid";
-import { SkillsMatrix } from "@/components/skills-matrix";
+import { ProfessionalExperience } from "@/components/professional-experience";
+import { RecruiterStrip } from "@/components/recruiter-strip";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { projects } from "@/lib/content";
+import { Skills } from "@/components/skills";
+import { TechnicalLeadership } from "@/components/technical-leadership";
+import { caseStudies } from "@/lib/content";
 
 export default function Home() {
   return (
@@ -14,11 +18,15 @@ export default function Home() {
       <SiteHeader />
       <main>
         <Hero />
+        <RecruiterStrip />
         <About />
-        <Pillars />
-        <ProjectGrid projects={projects} />
-        <SkillsMatrix />
-        <HiringCta />
+        <Skills />
+        <ArchitectureThinking />
+        <CaseStudies studies={caseStudies} />
+        <EngineeringExperience />
+        <TechnicalLeadership />
+        <ProfessionalExperience />
+        <Contact />
       </main>
       <SiteFooter />
     </>

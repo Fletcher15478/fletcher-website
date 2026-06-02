@@ -1,21 +1,29 @@
 export const site = {
   name: "Fletcher Hartsock",
-  title:
-    "Field & Implementation Engineer · Charlotte, NC · Technical Operations & Customer Systems",
-  headline:
-    "Technical operator for field deployments, customer support, and production systems",
+  title: "Full Stack Software Engineer & Systems Integration Engineer",
+  headline: "Building scalable systems, integrations, automation, and engineering solutions",
   headlineSub:
-    "Charlotte‑based engineer with hardware and integration background—leads on‑site rollouts, trains operators, troubleshoots field issues, and builds production infrastructure. Open to field engineering with travel, implementation engineering, and integration roles.",
-  resume: "/Fletcher_Hartsock_RSM.pdf",
+    "Computer Science graduate focused on enterprise software, systems integration, and production operations—translating business requirements into reliable technical implementations.",
+  relocating: "Relocating to Charlotte, NC",
+  resume: "/Fletcher_Hartsock_PNC.pdf",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   email: "fletchhartsock93@gmail.com",
+  phone: "724-557-9213",
   linkedin: "https://www.linkedin.com/in/fletcher-hartsock-4b1a80239",
   github: "https://github.com/Fletcher15478",
   location: {
     city: "Charlotte",
     region: "NC",
     country: "United States",
-    /** ISO 3166 */
     countryCode: "US",
   },
+  /** Visible in hero for 15-second recruiter scan */
+  targetRoles: [
+    "Software Engineer",
+    "Systems Integration Engineer",
+    "Engineering Technologist",
+    "Technical Analyst",
+    "Solutions Engineer",
+    "Implementation Engineer",
+  ] as const,
 } as const;

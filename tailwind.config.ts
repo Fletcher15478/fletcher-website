@@ -9,19 +9,20 @@ const config: Config = {
     extend: {
       colors: {
         canvas: {
-          DEFAULT: "#06080d",
-          elevated: "#0c1018",
-          subtle: "#111827",
+          DEFAULT: "#f4f6f9",
+          elevated: "#ffffff",
+          subtle: "#e8ecf2",
         },
-        edge: "rgba(255,255,255,0.08)",
+        edge: "#d4dce6",
         ink: {
-          DEFAULT: "#e5e7eb",
-          muted: "#9ca3af",
-          faint: "#6b7280",
+          DEFAULT: "#0f172a",
+          muted: "#475569",
+          faint: "#64748b",
         },
-        accent: {
-          DEFAULT: "#6366f1",
-          dim: "#4f46e5",
+        brand: {
+          DEFAULT: "#004785",
+          dim: "#003566",
+          light: "#e8f1fa",
         },
       },
       fontFamily: {
@@ -29,28 +30,8 @@ const config: Config = {
         mono: ["var(--font-mono)", "ui-monospace", "monospace"],
       },
       boxShadow: {
-        soft: "0 0 0 1px rgba(255,255,255,0.06), 0 24px 80px rgba(0,0,0,0.45)",
-        glow: "0 0 80px rgba(99,102,241,0.15)",
-      },
-      backgroundImage: {
-        "grid-fine":
-          "linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px)",
-        "radial-fade":
-          "radial-gradient(ellipse 80% 60% at 50% -20%, rgba(99,102,241,0.22), transparent 55%)",
-      },
-      animation: {
-        "fade-up": "fadeUp 0.7s ease-out forwards",
-        "fade-in": "fadeIn 0.5s ease-out forwards",
-      },
-      keyframes: {
-        fadeUp: {
-          from: { opacity: "0", transform: "translateY(12px)" },
-          to: { opacity: "1", transform: "translateY(0)" },
-        },
-        fadeIn: {
-          from: { opacity: "0" },
-          to: { opacity: "1" },
-        },
+        card: "0 1px 3px rgba(15, 23, 42, 0.06), 0 8px 24px rgba(15, 23, 42, 0.06)",
+        header: "0 1px 0 rgba(15, 23, 42, 0.06)",
       },
     },
   },
