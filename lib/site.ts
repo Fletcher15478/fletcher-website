@@ -5,7 +5,7 @@ export const site = {
   headlineSub:
     "Computer Science graduate focused on enterprise software, systems integration, and production operations—translating business requirements into reliable technical implementations.",
   relocating: "Relocating to Charlotte, NC",
-  resume: "/Fletcher_Hartsock_PNC.pdf",
+  resume: "/Fletcher-Hartsock-Resume.pdf",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   email: "fletchhartsock93@gmail.com",
   phone: "724-557-9213",

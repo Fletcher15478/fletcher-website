@@ -6,3 +6,14 @@ dist/
 .env*.local
 *.log
 .DS_Store
+
+# Local job-search workflow (not part of portfolio)
+job-search/
+resume.lol.md
+resume.lol.css
+
+# Company-tailored resume variants (keep only Fletcher-Hartsock-Resume.pdf in public/)
+public/Fletcher_Hartsock_*.pdf
+assets/*Resume*.pdf
+assets/Updated_Resume.pdf
+assets/Fletcher_Hartsock_*.pdf
