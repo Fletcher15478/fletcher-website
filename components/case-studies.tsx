@@ -4,7 +4,80 @@ import { MermaidDiagram } from "@/components/mermaid-diagram";
 import { ProjectMedia } from "@/components/project-media";
 import { Section } from "@/components/section";
 
+function LinkedCaseStudyCard({ study }: { study: CaseStudy }) {
+  const href = study.detailHref ?? study.links[0]?.href ?? "#";
+
+  return (
+    <article
+      id={study.id}
+      className={`scroll-mt-24 overflow-hidden rounded-xl border border-edge bg-canvas-elevated shadow-card transition hover:border-brand/30 ${
+        study.featured ? "ring-1 ring-brand/20" : ""
+      }`}
+    >
+      {study.image ? (
+        <div className="relative aspect-[21/9] border-b border-edge bg-canvas-subtle">
+          <ProjectMedia
+            src={study.image.src}
+            alt={study.image.alt}
+            fallbackSrc={study.image.fallbackSrc}
+            className="h-full w-full object-cover object-top"
+          />
+        </div>
+      ) : null}
+
+      <div className="p-6 sm:p-8">
+        <p className="text-xs font-semibold uppercase tracking-wide text-brand">{study.role}</p>
+        <h3 className="mt-2 text-2xl font-semibold text-ink">{study.name}</h3>
+        {study.oneLiner ? (
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-ink-muted">{study.oneLiner}</p>
+        ) : null}
+
+        <ul className="mt-5 flex flex-wrap gap-2">
+          {study.technologies.slice(0, 6).map((tech) => (
+            <li
+              key={tech}
+              className="rounded-md border border-edge bg-canvas-subtle px-2.5 py-1 font-mono text-xs text-ink-muted"
+            >
+              {tech}
+            </li>
+          ))}
+        </ul>
+
+        <div className="mt-6 grid gap-6 sm:grid-cols-2">
+          <div>
+            <h4 className="text-sm font-semibold text-ink">Problem</h4>
+            <p className="mt-2 text-sm leading-relaxed text-ink-muted">{study.problem}</p>
+          </div>
+          <div>
+            <h4 className="text-sm font-semibold text-ink">Impact</h4>
+            <ul className="mt-2 space-y-2">
+              {study.businessImpact.slice(0, 2).map((item) => (
+                <li key={item} className="flex gap-2 text-sm text-ink-muted">
+                  <span className="mt-1.5 h-1 w-1 flex-none rounded-full bg-brand" aria-hidden />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-8 border-t border-edge pt-6">
+          <Link
+            href={href}
+            className="focus-ring inline-flex rounded-md bg-brand px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-dim"
+          >
+            View case study →
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+}
+
 function CaseStudyCard({ study }: { study: CaseStudy }) {
+  if (study.detailHref) {
+    return <LinkedCaseStudyCard study={study} />;
+  }
   return (
     <article
       id={study.id}

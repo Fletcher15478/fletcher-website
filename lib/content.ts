@@ -8,6 +8,8 @@ export type CaseStudy = {
   name: string;
   role: string;
   featured?: boolean;
+  oneLiner?: string;
+  detailHref?: string;
   problem: string;
   solution: string;
   architecture: string;
@@ -186,6 +188,45 @@ export const education = {
 } as const;
 
 export const caseStudies: CaseStudy[] = [
+  {
+    id: "weekly-performance-dashboard",
+    name: "Weekly Performance Dashboard",
+    role: "Sole developer · Full-stack engineer",
+    featured: true,
+    oneLiner:
+      "Executive weekly sales dashboard unifying Square POS and third-party delivery — WoW/YoY, location health, flavor mix, and auto-generated insights across 17+ locations.",
+    detailHref: "/projects/weekly-performance-dashboard",
+    problem:
+      "Leadership reviewed weekly performance in a manual Monday spreadsheet. In-store Square sales and delivery platforms were separate data paths, gross/net scope had to reconcile, and week comparisons needed Eastern Time boundaries — all independent of royalty workflows.",
+    solution:
+      "Built an authenticated executive dashboard with workbook-aligned net overrides, composable server analytics behind `/api/analytics/week`, sequential multi-week trend loading, and auto-generated Monday leadership insights.",
+    architecture:
+      "Square + delivery sync → ET week-boundary analytics module (`leadershipNet`, `composeDashboard`, `insights`, `health`, `compare`) → Next.js dashboard UI with Recharts. Read-only layer isolated from royalty tables.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Recharts",
+      "Square API",
+      "Supabase",
+    ],
+    businessImpact: [
+      "Replaced manual Monday spreadsheet review with a live dashboard leadership can trust",
+      "Single view across shops, food trucks, and corporate locations",
+      "Product and flavor insights surfaced automatically for weekly leadership meetings",
+    ],
+    lessonsLearned: [
+      "Treat the leadership workbook as a contract — timezone bugs on week keys can silently break overrides",
+      "Headline sales scope and product-mix analytics need explicit separation to keep gross ≥ net",
+    ],
+    diagrams: [],
+    links: [{ label: "View case study", href: "/projects/weekly-performance-dashboard" }],
+    image: {
+      src: "/weekly-performance-overview.png",
+      alt: "Weekly Performance Dashboard executive overview",
+    },
+  },
   {
     id: "millies-manager",
     name: "Millie's Manager Platform",
