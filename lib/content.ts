@@ -23,39 +23,78 @@ export type CaseStudy = {
 
 export const aboutHighlights = [
   "B.S. Computer Science, West Virginia University (2025)",
+  "Stack aligned to current hiring demand: Python, Java, React, AWS, Docker, Kubernetes, SQL, Spring Boot",
+  "Red Hat System Administration I & II · Cisco networking (foundational)",
   "Systems integration across POS, e-commerce, ERP, and operational platforms",
   "Enterprise software implementation, configuration, and production support",
-  "Hardware validation, sensor integration, and vehicle telemetry (EcoCAR)",
-  "Data analysis, SQL reporting, and business systems alignment",
-  "Cross-functional collaboration with operations, finance, and leadership",
+  "Hardware validation, CAN Bus telemetry, and vehicle systems (EcoCAR)",
+  "Data analytics, SQL reporting, and business systems alignment",
 ] as const;
 
 export const skillCategories = [
   {
-    title: "Programming",
-    items: ["JavaScript", "TypeScript", "Python", "SQL", "Java", "C"],
+    title: "High-demand stack",
+    featured: true,
+    items: [
+      "Python",
+      "Java",
+      "React",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "SQL",
+      "Spring Boot",
+      "REST APIs",
+      "CI/CD",
+    ],
+  },
+  {
+    title: "Languages",
+    items: ["JavaScript", "TypeScript", "Python", "Java", "SQL", "C"],
   },
   {
     title: "Frontend",
     items: ["React", "Next.js", "HTML", "CSS", "Tailwind CSS"],
   },
   {
-    title: "Backend",
-    items: ["Node.js", "REST APIs", "Authentication", "Database Design"],
+    title: "Cloud & DevOps",
+    items: ["AWS", "Azure", "Docker", "Kubernetes", "Linux", "Git", "CI/CD"],
   },
   {
-    title: "Data & Systems",
-    items: ["PostgreSQL", "Supabase", "MySQL", "Analytics", "Reporting", "ETL"],
+    title: "Data & databases",
+    items: ["PostgreSQL", "SQL", "Supabase", "MySQL", "Data Analytics", "Reporting", "ETL"],
   },
   {
-    title: "Engineering",
+    title: "Integration & systems",
     items: [
-      "CAN Bus",
-      "Vehicle Telemetry",
-      "Sensor Integration",
+      "REST APIs",
+      "System Integration",
+      "Business Systems Analysis",
+      "Technical Support",
+      "Node.js",
+      "Authentication",
+    ],
+  },
+  {
+    title: "Networking & infrastructure",
+    items: ["Network Administration", "Cisco Networking"],
+  },
+  {
+    title: "Engineering & hardware",
+    items: [
+      "CAN Bus Telemetry",
       "Hardware Validation",
+      "Sensor Integration",
+      "Vehicle Telemetry",
       "Diagnostics",
-      "PLC Fundamentals",
+    ],
+  },
+  {
+    title: "Certifications",
+    items: [
+      "Cisco Networking (foundational)",
+      "Red Hat System Administration I",
+      "Red Hat System Administration II",
     ],
   },
   {
@@ -63,9 +102,9 @@ export const skillCategories = [
     items: [
       "System Design",
       "Technical Documentation",
-      "Project Coordination",
-      "Stakeholder Communication",
       "Requirements Gathering",
+      "Stakeholder Communication",
+      "Project Coordination",
       "Agile / Scrum",
     ],
   },
